@@ -1,0 +1,5 @@
+FROM maven-sample:latest
+
+ARG skipTests
+
+RUN mvn clean install -DskipTests=${skipTests}
